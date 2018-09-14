@@ -64,9 +64,34 @@
 		border-top: 3px solid #dd2727;
 	}
 
-</style>
-<body>
+	.catear {
+		position: absolute;
+		height: 15px;
+		display: none;
+	}
 
+</style>
+<script>
+	$(function(){
+		$('div.rightMenu span').mouseenter(function () { 
+			var position = $(this).position();
+			var top = position.top;
+			var left = position.left;
+			var width = $(this).css('width');	
+			var destLeft = parseInt(left) + parseInt(width) / 2;
+			$('img#catear').css('left', destLeft - 5);
+			$('img#catear').css('top', top + 33);
+			$('img#catear').fadeIn(500);
+		});
+		$('div.rightMenu span').mouseleave(function () { 
+			$('img#catear').hide();
+		});
+	});
+</script>
+<body>	
+
+	<div style="height:50px;"></div>
+	<img src="http://how2j.cn/tmall/img/site/catear.png" style="left: 260.5px; top: 159.65px; display: none;" class="catear" id="catear">
 	<div class="categoryWithCarousel">
 		<div class="headbar">
 			<div class="head">
@@ -80,7 +105,7 @@
 				<span><a href="#no">电器城</a></span>
 				<span><a href="#no">喵鲜生</a></span>
 				<span><a href="#no">医药馆</a></span>
-				<span><a href="#no">营业厅</a>营业厅</span>
+				<span><a href="#no">营业厅</a></span>
 				<span><a href="#no">魅力惠</a></span>
 				<span><a href="#no">飞猪旅行</a></span>
 				<span><a href="#no">苏宁易购</a></span>

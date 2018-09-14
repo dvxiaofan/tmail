@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+	.categoryMenu {
+		width: 200px;
+		background-color: #6e6e6e;
+		margin-left: 20px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		padding-left: 0;
+		border-bottom: 1px solid #000;
+
+		/* height: 510px; */
+	}
+	.eachCategory {
+		/* height: 31.8px; */
+		font-size: 14px;
+		line-height: 30px;
+		padding-left: 10px;
+	}
+	.eachCategory span:first-child {
+		margin-right: 10px;
+	}
+	.categoryMenu li {
+		list-style: none;
+		color: #fff;
+	}
+	.eachCategory:hover {
+		background-color: #fff;
+		color: #c40000;
+	}
+	/* .categoryMenu li {
+		display: block;		
+		color: #fff;
+	} */
+	/* .categoryMenu a:hover{
+		text-decoration: none;
+		background-color: #fff;
+		color: #c40000;
+	} */
+
+
+	.productsAsideCategorys {
+		width: 800px;
+		height: 510px;
+		background-color: #fff;
+		margin-left: 220px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	.productsAsideCategorys .row {
+		margin: 10px 80px 0 40px;
+		display: flex;
+		flex-direction: row;
+		min-height: 45px;
+	}
+	.productsAsideCategorys .row .rowTitle {
+		width: 100px;
+		color: #000;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.productsAsideCategorys .row .rowItems {
+		border-bottom: 1px dashed #e5e5e5;
+		padding-bottom: 10px;
+		width: 80%;
+	}
+	.productsAsideCategorys a {
+		font-size: 14px;
+		color: #999;
+		margin: 8px;
+	}
+	.productsAsideCategorys a:hover {
+		color: #4a78f7;
+		text-decoration: none;
+	}
+
+
+
+</style>
+<body>
+
+	<div class="categoryWithCarousel">
+		<div style="position:relative;">
+			<ul class="categoryMenu">
+				<li class="eachCategory" cid="83">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no" class="item">女装 /内衣</span>
+				</li>
+				<li class="eachCategory" cid="82">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">男装 /运动户外</span>
+				</li>
+				<li class="eachCategory" cid="81">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">女鞋 /男鞋 /箱包</span>
+				</li>
+				<li class="eachCategory" cid="80">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">美妆 /个人护理</span>
+				</li>
+				<li class="eachCategory" cid="79">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">腕表 /眼镜 /珠宝饰品</span>
+				</li>
+				<li class="eachCategory" cid="78">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">手机 /数码 /电脑办公</span>
+				</li>
+				<li class="eachCategory" cid="77">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">母婴玩具</span>
+				</li>
+				<li class="eachCategory" cid="76">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">零食 /茶酒 /进口食品</span>
+				</li>
+				<li class="eachCategory" cid="75">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">生鲜水果</span>
+				</li>
+				<li class="eachCategory" cid="74">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">大家电 /生活电器</span>
+				</li>
+				<li class="eachCategory" cid="73">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">家具建材</span>
+				</li>
+				<li class="eachCategory" cid="72">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">汽车 /配件 /用品</span>
+				</li>
+				<li class="eachCategory" cid="71">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">家纺 /家饰 /鲜花</span>
+				</li>
+				<li class="eachCategory" cid="70">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">医药保健</span>
+				</li>
+				<li class="eachCategory" cid="69">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">厨具 /收纳 /宠物</span>
+				</li>
+				<li class="eachCategory" cid="68">
+					<span class="glyphicon glyphicon-link"></span>
+					<span href="#no">图书音像</span>
+				</li>
+			</ul>
+		</div> 
+
+
+		<div style="position: relative; left: 0; top: 0;">
+			<div class="productsAsideCategorys" cid="83">
+				<div class="row">
+					<div class="rowTitle">当季流行 ></div>
+					<div class="rowItems">
+							<a href="#no">夏季新品</a>
+							<a href="#no">商场同款</a>
+							<a href="#no">仙女连衣裙</a>
+							<a href="#no">T恤</a>
+							<a href="#no">衬衫</a>
+							<a href="#no">时髦外套</a>
+							<a href="#no">休闲裤</a>
+							<a href="#no">牛仔裤</a>
+							<a href="#no">无痕文胸</a>
+							<a href="#no">运动文胸</a>
+							<a href="#no">潮流家居服</a>
+							<a href="#no">百搭船袜</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="rowTitle">当季流行 ></div>
+					<div class="rowItems">
+							<a href="#no">夏季新品</a>
+							<a href="#no">商场同款</a>
+							<a href="#no">仙女连衣裙</a>
+							<a href="#no">T恤</a>
+							<a href="#no">衬衫</a>
+							<a href="#no">休闲裤</a>
+							<a href="#no">牛仔裤</a>
+							<a href="#no">无痕文胸</a>
+							<a href="#no">运动文胸</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="rowTitle">当季流行 ></div>
+					<div class="rowItems">
+							<a href="#no">夏季新品</a>
+							<a href="#no">商场同款</a>
+							<a href="#no">仙女连衣裙</a>
+							<a href="#no">T恤</a>
+							<a href="#no">衬衫</a>
+							<a href="#no">时髦外套</a>
+							<a href="#no">休闲裤</a>
+							<a href="#no">牛仔裤</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="rowTitle">当季流行 ></div>
+					<div class="rowItems">
+							<a href="#no">夏季新品</a>
+							<a href="#no">商场同款</a>
+							<a href="#no">仙女连衣裙</a>
+							<a href="#no">T恤</a>
+							<a href="#no">衬衫</a>
+							<a href="#no">时髦外套</a>
+							<a href="#no">潮流家居服</a>
+							<a href="#no">百搭船袜</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="rowTitle">当季流行 ></div>
+					<div class="rowItems">
+							<a href="#no">夏季新品</a>
+							<a href="#no">商场同款</a>
+							<a href="#no">仙女连衣裙</a>
+							<a href="#no">T恤</a>
+							<a href="#no">衬衫</a>
+							<a href="#no">运动文胸</a>
+							<a href="#no">潮流家居服</a>
+							<a href="#no">百搭船袜</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="rowTitle">当季流行 ></div>
+					<div class="rowItems">
+							<a href="#no">夏季新品</a>
+							<a href="#no">商场同款</a>
+							<a href="#no">仙女连衣裙</a>
+							<a href="#no">T恤</a>
+							<a href="#no">衬衫</a>
+							<a href="#no">时髦外套</a>
+							<a href="#no">休闲裤</a>
+							<a href="#no">运动文胸</a>
+							<a href="#no">潮流家居服</a>
+							<a href="#no">百搭船袜</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="rowTitle">当季流行 ></div>
+					<div class="rowItems">
+							<a href="#no">夏季新品</a>
+							<a href="#no">商场同款</a>
+							<a href="#no">仙女连衣裙</a>
+							<a href="#no">T恤</a>
+							<a href="#no">衬衫</a>
+							<a href="#no">时髦外套</a>
+							<a href="#no">潮流家居服</a>
+							<a href="#no">百搭船袜</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="rowTitle">当季流行 ></div>
+					<div class="rowItems">
+							<a href="#no">夏季新品</a>
+							<a href="#no">商场同款</a>
+							<a href="#no">仙女连衣裙</a>
+							<a href="#no">T恤</a>
+							<a href="#no">衬衫</a>
+							<a href="#no">时髦外套</a>
+							<a href="#no">休闲裤</a>
+							<a href="#no">牛仔裤</a>
+							<a href="#no">无痕文胸</a>
+							<a href="#no">运动文胸</a>
+							<a href="#no">潮流家居服</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

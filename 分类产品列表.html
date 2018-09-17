@@ -10,6 +10,52 @@
 </head>
 
 <style>
+	.categoryPageDiv {
+		max-width: 1200px;
+		margin: 10px auto;
+	}
+	.categorySortBar {
+		background-color: #faf9f9;
+		margin: 40px 28px 20px;
+		padding: 4px;
+	}
+	.categorySortBarTable {
+		display: inline-block;
+		border-collapse: collapse;  /*表格之间没有间隙*/
+	}
+	.categorySortBarTable span.glyphicon {
+		font-size: 10px;
+	}
+	.categorySortBarTable td {
+		font-size: 12px;
+		height: 17px;
+		border: 1px solid #ccc;
+		padding: 3px;
+	}
+	.categorySortBarTable .grayColumn {
+		background-color: #F1EDEC;
+	}
+	.categorySortBarTable td a {
+		color: #806f66;
+	}
+	.categorySortBarTable td a:hover {
+		color: #ff0002;
+		text-decoration: none;
+	}
+	.categorySortBarTable input {
+		width: 45px;
+		height: 15px;
+		border-width: 0;
+	}
+	.categorySortBarTable .priceMiddleColumn {
+		width: 5px;
+		vertical-align: middle;
+		color: #ccc;
+	}
+	.categorySortBarTable td:hover {
+		background-color: #F1EDEC;
+	}
+
 	.productUnitFrame img {
 		width: 204px;
 		height: 200px;
@@ -20,11 +66,6 @@
 		height: auto;
 	}
 
-	.categoryPageDiv {
-		max-width: 1200px;
-		margin: 10px auto;
-		
-	}
 	.categoryProducts {
 		padding: 0 20px 40px;
 	}
@@ -115,6 +156,28 @@
 <body>
 
 	<div class="categoryPageDiv">
+
+		<img src="http://how2j.cn/tmall/img/category/72.jpg">
+		<div class="categorySortBar">
+			<table class="categorySortBarTable categorySortTable">
+				<tbody><tr>
+					<td class="grayColumn"><a href="#no">综合<span class="glyphicon glyphicon-arrow-down"></span></a></td>
+					<td><a href="#no">人气<span class="glyphicon glyphicon-arrow-down"></span></a></td>
+					<td><a href="#no">新品<span class="glyphicon glyphicon-arrow-down"></span></a></td>
+					<td><a href="#no">销量<span class="glyphicon glyphicon-arrow-down"></span></a></td>
+					<td><a href="#no">价格<span class="glyphicon glyphicon-menu-up"></span><span class="glyphicon glyphicon-menu-down"></span></a></td>
+				</tr></tbody>
+			</table>
+			<table class="categorySortBarTable">
+				<tbody><tr>
+					<td><input type="text" placeholder="¥请输入" class="sortBarPrice beginPrice"></td>
+					<td class="grayColumn priceMiddleColumn">-</td>
+					<td><input type="text" placeholder="¥请输入" class="sortBarPrice endPrice"></td>
+				</tr></tbody>
+			</table>
+		</div>
+
+
 		<div class="categoryProducts">
 			<div class="productUnit" price="149.0">
 				<div class="productUnitFrame">
@@ -131,10 +194,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="productUnit" price="149.0">
+			<div class="productUnit" price="249.0">
 				<div class="productUnitFrame">
 					<a href="#no"><img src="https://img.alicdn.com/bao/uploaded/i4/1923029750/TB2RBoUHr9YBuNjy0FgXXcxcXXa_!!1923029750-0-item_pic.jpg"></a>
-					<span class="productPrice">¥149.00</span>
+					<span class="productPrice">¥249.00</span>
 					<a href="#no" class="productLink">花花公子弹力韩版男士秋季修身西裤</a>
 					<a href="#no" class="tmallLink">playboy艾诚专卖店</a>
 					<div class="show1 productInfo">
@@ -146,10 +209,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="productUnit" price="149.0">
+			<div class="productUnit" price="349.0">
 				<div class="productUnitFrame">
 					<a href="#no"><img src="https://img.alicdn.com/bao/uploaded/i4/1923029750/TB2RBoUHr9YBuNjy0FgXXcxcXXa_!!1923029750-0-item_pic.jpg"></a>
-					<span class="productPrice">¥149.00</span>
+					<span class="productPrice">¥349.00</span>
 					<a href="#no" class="productLink">花花公子弹力韩版男士秋季修身西裤</a>
 					<a href="#no" class="tmallLink">playboy艾诚专卖店</a>
 					<div class="show1 productInfo">
@@ -161,10 +224,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="productUnit" price="149.0">
+			<div class="productUnit" price="449.0">
 				<div class="productUnitFrame">
 					<a href="#no"><img src="https://img.alicdn.com/bao/uploaded/i4/1923029750/TB2RBoUHr9YBuNjy0FgXXcxcXXa_!!1923029750-0-item_pic.jpg"></a>
-					<span class="productPrice">¥149.00</span>
+					<span class="productPrice">¥449.00</span>
 					<a href="#no" class="productLink">花花公子弹力韩版男士秋季修身西裤</a>
 					<a href="#no" class="tmallLink">playboy艾诚专卖店</a>
 					<div class="show1 productInfo">
@@ -176,10 +239,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="productUnit" price="149.0">
+			<div class="productUnit" price="549.0">
 				<div class="productUnitFrame">
 					<a href="#no"><img src="https://img.alicdn.com/bao/uploaded/i4/1923029750/TB2RBoUHr9YBuNjy0FgXXcxcXXa_!!1923029750-0-item_pic.jpg"></a>
-					<span class="productPrice">¥149.00</span>
+					<span class="productPrice">¥549.00</span>
 					<a href="#no" class="productLink">花花公子弹力韩版男士秋季修身西裤</a>
 					<a href="#no" class="tmallLink">playboy艾诚专卖店</a>
 					<div class="show1 productInfo">
@@ -191,10 +254,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="productUnit" price="149.0">
+			<div class="productUnit" price="649.0">
 				<div class="productUnitFrame">
 					<a href="#no"><img src="https://img.alicdn.com/bao/uploaded/i4/1923029750/TB2RBoUHr9YBuNjy0FgXXcxcXXa_!!1923029750-0-item_pic.jpg"></a>
-					<span class="productPrice">¥149.00</span>
+					<span class="productPrice">¥649.00</span>
 					<a href="#no" class="productLink">花花公子弹力韩版男士秋季修身西裤</a>
 					<a href="#no" class="tmallLink">playboy艾诚专卖店</a>
 					<div class="show1 productInfo">
@@ -206,10 +269,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="productUnit" price="149.0">
+			<div class="productUnit" price="749.0">
 				<div class="productUnitFrame">
 					<a href="#no"><img src="https://img.alicdn.com/bao/uploaded/i4/1923029750/TB2RBoUHr9YBuNjy0FgXXcxcXXa_!!1923029750-0-item_pic.jpg"></a>
-					<span class="productPrice">¥149.00</span>
+					<span class="productPrice">¥749.00</span>
 					<a href="#no" class="productLink">花花公子弹力韩版男士秋季修身西裤</a>
 					<a href="#no" class="tmallLink">playboy艾诚专卖店</a>
 					<div class="show1 productInfo">
@@ -221,10 +284,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="productUnit" price="149.0">
+			<div class="productUnit" price="849.0">
 				<div class="productUnitFrame">
 					<a href="#no"><img src="https://img.alicdn.com/bao/uploaded/i4/1923029750/TB2RBoUHr9YBuNjy0FgXXcxcXXa_!!1923029750-0-item_pic.jpg"></a>
-					<span class="productPrice">¥149.00</span>
+					<span class="productPrice">¥849.00</span>
 					<a href="#no" class="productLink">花花公子弹力韩版男士秋季修身西裤</a>
 					<a href="#no" class="tmallLink">playboy艾诚专卖店</a>
 					<div class="show1 productInfo">
@@ -236,10 +299,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="productUnit" price="149.0">
+			<div class="productUnit" price="949.0">
 				<div class="productUnitFrame">
 					<a href="#no"><img src="https://img.alicdn.com/bao/uploaded/i4/1923029750/TB2RBoUHr9YBuNjy0FgXXcxcXXa_!!1923029750-0-item_pic.jpg"></a>
-					<span class="productPrice">¥149.00</span>
+					<span class="productPrice">¥949.00</span>
 					<a href="#no" class="productLink">花花公子弹力韩版男士秋季修身西裤</a>
 					<a href="#no" class="tmallLink">playboy艾诚专卖店</a>
 					<div class="show1 productInfo">
@@ -251,10 +314,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="productUnit" price="149.0">
+			<div class="productUnit" price="409.0">
 				<div class="productUnitFrame">
 					<a href="#no"><img src="https://img.alicdn.com/bao/uploaded/i4/1923029750/TB2RBoUHr9YBuNjy0FgXXcxcXXa_!!1923029750-0-item_pic.jpg"></a>
-					<span class="productPrice">¥149.00</span>
+					<span class="productPrice">¥409.00</span>
 					<a href="#no" class="productLink">花花公子弹力韩版男士秋季修身西裤</a>
 					<a href="#no" class="tmallLink">playboy艾诚专卖店</a>
 					<div class="show1 productInfo">

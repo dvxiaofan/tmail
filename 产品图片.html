@@ -40,6 +40,82 @@
 		border: 2px solid #000;
 	}
 
+	.infoInImgAndInfo {
+		width: 530px;
+		padding: 0 20px;
+		overflow: hidden;
+	}
+	.infoInImgAndInfo .productTitle {
+		font-size: 16px;
+		color: #000;
+		font-weight: bold;
+		margin: 0 10px;
+	}
+	.infoInImgAndInfo .productSubTitle {
+		font-size: 12px;
+		color: #f00002;
+		margin: 0 10px;
+	}
+	.infoInImgAndInfo .juhuasuan {
+		background-color: #e90024;
+		color: #fff;
+		text-align: center;
+		height: 40px;
+		line-height: 40px;
+		margin-top: 10px;
+	}
+	.juhuasuan .juhuasuanBig {
+		font-size: 20px;
+		font-weight: bold;
+		font-family: '黑体';
+	}
+	.juhuasuan .juhuasuanTime {
+		color: #ffd000;
+		font-weight: bold;
+	}
+
+	.infoInImgAndInfo .productPriceDiv {
+		background-color: #e9e9ed;
+		height: 124px;
+	}
+	.productPriceDiv .gouwuquanDiv, .originalDiv, .promotionDiv, .bendianhuodongDiv {
+		padding-left: 5px;
+		padding-top: 5px;
+	}
+	.productPriceDiv .originalPriceDesc, .promotionPriceDesc, .bendianhuodongDesc {
+		display: inline-block;
+		color: #999;
+		width: 68px;
+	}
+	.productPriceDiv .originalPrice {
+		color: #333;
+		text-decoration: line-through;
+	}
+
+	.productPriceDiv .promotionPriceYuan {
+		font-size: 18px;
+		color: #f00002;
+	}
+	.productPriceDiv .promotionPrice {
+		font-size: 30px;
+		color: #f00002;
+		font-weight: bold;
+	}
+	.productPriceDiv .bendianhuodondText {
+		color: #bf5f00;
+		/* line-height: 28px; */
+	}
+	.productPriceDiv .promotionPriceDesc {
+		position: relative;
+		left: 0;
+		top: -3px;
+	}
+
+
+	body {
+		font-size: 12px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
 
 </style>
 
@@ -56,6 +132,87 @@
 				<img src="https://img.alicdn.com/imgextra/i1/1741410181/TB2WszVlYFlpuFjy0FgXXbRBVXa_!!1741410181.jpg_60x60q90.jpg" width="56px" class="smallImg">
 			</div>
 		</div>
+
+		<div class="infoInImgAndInfo">
+			<div class="productTitle">焦糖色V领女夏新品基础版简欧风宽松黑色白色圆领丝光棉短袖T恤 !</div>
+			<div class="productSubTitle">V领设计,喇叭袖设计,花卉印花,蛋糕裙摆</div>
+			<div class="productPrice">
+				<div class="juhuasuan">
+					<span class="juhuasuanBig">聚划算</span>
+					<span>此商品正在参加聚划算，<span class="juhuasuanTime">1天7小时</span>后结束，请尽快购买！</span>
+				</div>
+				<div class="productPriceDiv">
+					<div class="gouwuquanDiv"><img src="https://img.alicdn.com/tps/TB1okcBKVXXXXbBXVXXXXXXXXXX-116-32.png" height="16px">
+						<span>全天猫实物商品通用</span>
+						<span class="gouwuquanRight">去刮券 <span class="glyphicon glyphicon-menu-right"></span></span>
+					</div>
+					<div class="originalDiv">
+						<span class="originalPriceDesc">价格</span>
+						<span class="originalPriceYuan">¥</span>
+						<span class="originalPrice">749.00</span>
+					</div>
+					<div class="promotionDiv">
+						<span class="promotionPriceDesc">促销价</span>
+						<span class="promotionPriceYuan">¥</span>
+						<span class="promotionPrice">399.00</span>
+					</div>
+
+					<div class="bendianhuodongDiv">
+						<span class="bendianhuodongDesc">本店活动</span>
+						<span class="bendianhuodondText">满1件,包邮</span>
+					</div>
+				</div>
+			</div>
+			<div class="productSaleAndRevNum">
+				<div>月销量<span class="redColor boldWord">262</span></div>
+				<div>累计评价<span class="redColor boldWord">62</span></div>
+				<div>送天猫积分<span class="greenColor boldWord">199</span></div>
+			</div>
+			<div class="productNum">
+				<span>数量</span>
+				<span>
+					<span class="productNumSettingSpan">
+						<input type="text" value="1" class="productNumSetting">
+					</span>
+					<span class="arrow">
+						<a href="#no" class="increaseNumber">
+							<span class="updown">
+								<img src="http://how2j.cn/tmall/img/site/increase.png">
+							</span>
+						</a>
+						<span class="updownMiddle"></span>
+						<a href="#no" class="decreaseNumber">
+							<span class="updown">
+								<img src="http://how2j.cn/tmall/img/site/decrease.png">
+							</span>
+						</a>
+					</span>件
+				</span>库存231件
+			</div>
+
+			<div class="buyDiv">
+				<a href="#no" class="buyLink"><button class="buyBtn">立即购买</button></a>
+				<a href="#no" class="addCartLink"><button class="addCartBtn"><span class="glyphicon glyphicon-shopping-cart"></span>加入购物车</button></a>
+			</div>
+		
+			<div class="serviceCommitent">
+				<span class="serviceCommitentDesc">服务承诺</span>
+				<span class="serviceCommitentLink">
+					<a href="#no">赠保价险</a>
+					<a href="#no">正品保证</a>
+					<a href="#no">极速退款</a>
+					<a href="#no">七天无理由退换</a>
+					<a href="#no">支付方式</a>
+				</span>
+			</div>
+
+
+		</div>
+
+
+
+
+
 		<div style="clear:both"></div>
 	</div>
 </body>
